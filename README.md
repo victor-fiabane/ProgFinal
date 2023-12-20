@@ -5,3 +5,5 @@ possuindo a integração de uma API e sendo possível adicionar tarefas para usu
 
 Nesta primeira versão, o sistema de login está funcional, já estão implementadas as funções para editar e excluir tarefas,
 mas com bugs ainda para resolver. A API está completa e funcional.
+
+O workbench estava com problemas e não estava exportando o banco de dados, portanto coloquei seu código em um arquivo .txt e fiz upload
