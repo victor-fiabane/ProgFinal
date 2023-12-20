@@ -1,0 +1,22 @@
+create database basefinal;
+use basefinal;
+create table tbusuario(
+	idUsu int (50) not null primary key auto_increment,
+    email varchar(50),
+    nome varchar (70),
+    senha varchar (100),
+    adm tinyint(1) default 0
+);
+select * from tbusuario;
+create table tbtarefa(
+	idTare int (50) not null primary key auto_increment,
+    titulo varchar(20),
+    descricao text,
+    dateT date,
+    concluida tinyint(1) default 0,
+    fkIdUsu int (50),
+    foreign key (fkIdUsu) references tbusuario(idUsu)
+);
+select * from tbtarefa;
+SET FOREIGN_KEY_CHECKS=0;
+SET GLOBAL FOREIGN_KEY_CHECKS=0;
